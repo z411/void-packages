@@ -1,0 +1,18 @@
+# Template file for 'tremotesf'
+pkgname=tremotesf
+version=2.10.1
+revision=1
+build_style=cmake
+configure_args="-DTREMOTESF_WITH_HTTPLIB=none"
+hostmakedepends="pkg-config qt6-base"
+makedepends="qt6-base-devel fmt-devel kf6-kwidgetsaddons-devel
+ libpsl-devel gettext-devel kf6-kwindowsystem-devel qt6-svg-devel cxxopts"
+depends="fmt kf6-kwidgetsaddons libpsl gettext
+ qt6-dbus kf6-kwindowsystem qt6-svg"
+short_desc="Remote GUI for transmission-daemon"
+maintainer="z411 <z411@omaera.org>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/equeim/tremotesf2"
+changelog="https://raw.githubusercontent.com/equeim/tremotesf2/refs/heads/master/CHANGELOG.md"
+distfiles="https://github.com/equeim/tremotesf2/archive/${version}.tar.gz"
+checksum=39b47a43e41d8fdd082a6960fa4f9e0c7b85f5a9f83a7e1e8fefc06bec113d89
